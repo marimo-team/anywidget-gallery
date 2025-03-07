@@ -1,0 +1,6 @@
+name: TextLLooM
+description: Directory for the LLooM python package
+environments: [jupyter]
+githubRepo: shyamsantoki/textlloom
+tags: [nlp, text analysis, ai, interactive]
+packageName: textlloom

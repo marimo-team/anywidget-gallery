@@ -1,0 +1,8 @@
+name: WEAS Widget
+description: A widget to visualize and interact with atomistic structures in Jupyter Notebook
+environments: [jupyter]
+githubRepo: superstar54/weas-widget
+tags: [visualization, atomistic structures, interactive, chemistry]
+image: thumbnail.jpeg
+gif: thumbnail.gif
+packageName: weas-widget

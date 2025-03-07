@@ -1,0 +1,6 @@
+name: Xarray Fancy Repr
+description: Fancy reprs for Xarray objects in Jupyter notebooks (experimental)
+environments: [jupyter]
+githubRepo: benbovy/xarray-fancy-repr
+tags: [data science, xarray, visualization]
+packageName: xarray-fancy-repr

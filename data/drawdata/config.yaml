@@ -1,0 +1,9 @@
+name: DrawData
+description: Draw datasets from within Jupyter.
+environments: [marimo, jupyter, colab]
+githubRepo: koaning/drawdata
+notebookUrl: https://github.com/koaning/drawdata/blob/main/bar-demo.py
+tags: [visualization, data science, interactive]
+image: thumbnail.jpeg
+gif: thumbnail.gif
+packageName: drawdata

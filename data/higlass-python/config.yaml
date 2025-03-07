@@ -1,0 +1,8 @@
+name: HiGlass Python
+description: Python bindings for the HiGlass viewer
+environments: [jupyter]
+githubRepo: higlass/higlass-python
+tags: [visualization, genomics, interactive]
+image: thumbnail.jpeg
+gif: thumbnail.gif
+packageName: higlass-python

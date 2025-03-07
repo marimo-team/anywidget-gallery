@@ -1,0 +1,114 @@
+diff --git a/dist/useId.main.js b/dist/useId.main.js
+index 5febc814f244ae2406d1337435df87c2a65fb907..d50981c9e60ebb292eb718cf16ef39a7e8cfdeac 100644
+--- a/dist/useId.main.js
++++ b/dist/useId.main.js
+@@ -31,15 +31,11 @@ let $8c61827343eed941$export$d41a04c74483c6ef = new Map();
+ // This allows us to clean up the idsUpdaterMap when the id is no longer used.
+ // Map is a strong reference, so unused ids wouldn't be cleaned up otherwise.
+ // This can happen in suspended components where mount/unmount is not called.
+-let $8c61827343eed941$var$registry = new FinalizationRegistry((heldValue)=>{
+-    $8c61827343eed941$export$d41a04c74483c6ef.delete(heldValue);
+-});
+ function $8c61827343eed941$export$f680877a34711e37(defaultId) {
+     let [value, setValue] = (0, $dG5aF$react.useState)(defaultId);
+     let nextId = (0, $dG5aF$react.useRef)(null);
+     let res = (0, $dG5aF$reactariassr.useSSRSafeId)(value);
+     let cleanupRef = (0, $dG5aF$react.useRef)(null);
+-    $8c61827343eed941$var$registry.register(cleanupRef, res);
+     if ($8c61827343eed941$var$canUseDOM) {
+         const cacheIdRef = $8c61827343eed941$export$d41a04c74483c6ef.get(res);
+         if (cacheIdRef && !cacheIdRef.includes(nextId)) cacheIdRef.push(nextId);
+@@ -52,7 +48,6 @@ function $8c61827343eed941$export$f680877a34711e37(defaultId) {
+         return ()=>{
+             // In Suspense, the cleanup function may be not called
+             // when it is though, also remove it from the finalization registry.
+-            $8c61827343eed941$var$registry.unregister(cleanupRef);
+             $8c61827343eed941$export$d41a04c74483c6ef.delete(r);
+         };
+     }, [
+diff --git a/dist/useId.mjs b/dist/useId.mjs
+index 3f7b916198580b87f7575ebfab1231ae8893bffe..e15bcf32c1e33eda25a6f2e78d6741e99d290b82 100644
+--- a/dist/useId.mjs
++++ b/dist/useId.mjs
+@@ -23,15 +23,11 @@ let $bdb11010cef70236$export$d41a04c74483c6ef = new Map();
+ // This allows us to clean up the idsUpdaterMap when the id is no longer used.
+ // Map is a strong reference, so unused ids wouldn't be cleaned up otherwise.
+ // This can happen in suspended components where mount/unmount is not called.
+-let $bdb11010cef70236$var$registry = new FinalizationRegistry((heldValue)=>{
+-    $bdb11010cef70236$export$d41a04c74483c6ef.delete(heldValue);
+-});
+ function $bdb11010cef70236$export$f680877a34711e37(defaultId) {
+     let [value, setValue] = (0, $eKkEp$useState)(defaultId);
+     let nextId = (0, $eKkEp$useRef)(null);
+     let res = (0, $eKkEp$useSSRSafeId)(value);
+     let cleanupRef = (0, $eKkEp$useRef)(null);
+-    $bdb11010cef70236$var$registry.register(cleanupRef, res);
+     if ($bdb11010cef70236$var$canUseDOM) {
+         const cacheIdRef = $bdb11010cef70236$export$d41a04c74483c6ef.get(res);
+         if (cacheIdRef && !cacheIdRef.includes(nextId)) cacheIdRef.push(nextId);
+@@ -44,7 +40,6 @@ function $bdb11010cef70236$export$f680877a34711e37(defaultId) {
+         return ()=>{
+             // In Suspense, the cleanup function may be not called
+             // when it is though, also remove it from the finalization registry.
+-            $bdb11010cef70236$var$registry.unregister(cleanupRef);
+             $bdb11010cef70236$export$d41a04c74483c6ef.delete(r);
+         };
+     }, [
+diff --git a/dist/useId.module.js b/dist/useId.module.js
+index 8a6d54ac3ddeaa98f7b2b1b697adb954509c6215..12cfe8d47b57b8bf08c32ee897a37ef03d0182f8 100644
+--- a/dist/useId.module.js
++++ b/dist/useId.module.js
+@@ -23,15 +23,11 @@ let $bdb11010cef70236$export$d41a04c74483c6ef = new Map();
+ // This allows us to clean up the idsUpdaterMap when the id is no longer used.
+ // Map is a strong reference, so unused ids wouldn't be cleaned up otherwise.
+ // This can happen in suspended components where mount/unmount is not called.
+-let $bdb11010cef70236$var$registry = new FinalizationRegistry((heldValue)=>{
+-    $bdb11010cef70236$export$d41a04c74483c6ef.delete(heldValue);
+-});
+ function $bdb11010cef70236$export$f680877a34711e37(defaultId) {
+     let [value, setValue] = (0, $eKkEp$useState)(defaultId);
+     let nextId = (0, $eKkEp$useRef)(null);
+     let res = (0, $eKkEp$useSSRSafeId)(value);
+     let cleanupRef = (0, $eKkEp$useRef)(null);
+-    $bdb11010cef70236$var$registry.register(cleanupRef, res);
+     if ($bdb11010cef70236$var$canUseDOM) {
+         const cacheIdRef = $bdb11010cef70236$export$d41a04c74483c6ef.get(res);
+         if (cacheIdRef && !cacheIdRef.includes(nextId)) cacheIdRef.push(nextId);
+@@ -44,7 +40,6 @@ function $bdb11010cef70236$export$f680877a34711e37(defaultId) {
+         return ()=>{
+             // In Suspense, the cleanup function may be not called
+             // when it is though, also remove it from the finalization registry.
+-            $bdb11010cef70236$var$registry.unregister(cleanupRef);
+             $bdb11010cef70236$export$d41a04c74483c6ef.delete(r);
+         };
+     }, [
+diff --git a/src/useId.ts b/src/useId.ts
+index 032488052d75965caeb3af4992f47c8dd57fa482..d718528e584d1a57ce4a56c2d20228e1ddf115bf 100644
+--- a/src/useId.ts
++++ b/src/useId.ts
+@@ -26,9 +26,6 @@ export let idsUpdaterMap: Map<string, { current: string | null }[]> = new Map();
+ // This allows us to clean up the idsUpdaterMap when the id is no longer used.
+ // Map is a strong reference, so unused ids wouldn't be cleaned up otherwise.
+ // This can happen in suspended components where mount/unmount is not called.
+-let registry = new FinalizationRegistry<string>((heldValue) => {
+-  idsUpdaterMap.delete(heldValue);
+-});
+ 
+ /**
+  * If a default is not provided, generate an id.
+@@ -41,7 +38,6 @@ export function useId(defaultId?: string): string {
+   let res = useSSRSafeId(value);
+   let cleanupRef = useRef(null);
+ 
+-  registry.register(cleanupRef, res);
+ 
+   if (canUseDOM) {
+     const cacheIdRef = idsUpdaterMap.get(res);
+@@ -57,7 +53,6 @@ export function useId(defaultId?: string): string {
+     return () => {
+       // In Suspense, the cleanup function may be not called
+       // when it is though, also remove it from the finalization registry.
+-      registry.unregister(cleanupRef);
+       idsUpdaterMap.delete(r);
+     };
+   }, [res]);

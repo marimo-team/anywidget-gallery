@@ -1,0 +1,6 @@
+name: egglog-python
+description: Python bindings for the egg-smol rust library
+environments: [jupyter]
+githubRepo: egraphs-good/egglog-python
+tags: [egraphs, optimization, interactive]
+packageName: egglog-python

@@ -1,0 +1,6 @@
+name: CoSo
+description: CoSo is a lifted solver for combinatorics problems expressed in CoLa.
+environments: [jupyter]
+githubRepo: PietroTotis/CoSo
+tags: [combinatorics, solver, interactive]
+packageName: CoSo

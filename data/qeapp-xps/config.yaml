@@ -1,0 +1,6 @@
+name: QEApp-XPS
+description: A plugin for calculating X-ray Photoelectron Spectroscopy (XPS) spectra.
+environments: [jupyter]
+githubRepo: superstar54/qeapp-xps
+tags: [visualization, spectroscopy, chemistry, interactive]
+packageName: qeapp-xps

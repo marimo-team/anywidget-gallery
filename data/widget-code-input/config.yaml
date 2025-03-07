@@ -1,0 +1,6 @@
+name: Code Input Widget
+description: A jupyter widget to allow input of a python function, with syntax highlighting
+environments: [jupyter]
+githubRepo: osscar-org/widget-code-input
+tags: [code editor, syntax highlighting, interactive]
+packageName: widget-code-input

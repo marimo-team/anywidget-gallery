@@ -1,0 +1,6 @@
+name: BZ Visualizer Widget
+description: A Jupyter widget to show the first Brillouin zone of periodic crystals.
+environments: [jupyter]
+githubRepo: osscar-org/widget-bzvisualizer
+tags: [visualization, physics, crystallography, interactive]
+packageName: widget-bzvisualizer

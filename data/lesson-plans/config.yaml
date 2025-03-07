@@ -1,0 +1,6 @@
+name: Callysto Lesson Plans
+description: Callysto resources related to lesson plans or lesson planning
+environments: [jupyter]
+githubRepo: callysto/lesson-plans
+tags: [education, lesson plans, interactive]
+packageName: lesson-plans

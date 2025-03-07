@@ -1,0 +1,7 @@
+name: IPyMIDI
+description: Interactive MIDI in Jupyter
+environments: [jupyter]
+githubRepo: geigr/ipymidi
+tags: [music, midi, interactive, audio]
+image: thumbnail.svg
+packageName: ipymidi

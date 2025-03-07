@@ -1,0 +1,6 @@
+name: Leafmap
+description: A Python package for interactive mapping and geospatial analysis with minimal coding in a Jupyter environment
+environments: [jupyter]
+githubRepo: opengeos/leafmap
+tags: [visualization, maps, geospatial, interactive]
+packageName: leafmap

@@ -1,0 +1,6 @@
+name: LLooM
+description: 'Concept Induction: Analyzing Unstructured Text with High-Level Concepts Using LLooM (CHI 2024 paper). LLooM automatically surfaces high-level concepts to analyze unstructured text.'
+environments: [jupyter]
+githubRepo: michelle123lam/lloom
+tags: [nlp, text analysis, ai, interactive]
+packageName: lloom

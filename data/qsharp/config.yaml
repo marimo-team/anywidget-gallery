@@ -1,0 +1,6 @@
+name: Q#
+description: Azure Quantum Development Kit
+environments: [jupyter]
+githubRepo: microsoft/qsharp
+tags: [quantum computing, development kit]
+packageName: qsharp

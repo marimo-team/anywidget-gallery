@@ -1,0 +1,8 @@
+name: Soupernova
+description: Make viewing images a blast!
+environments: [jupyter]
+githubRepo: mwcraig/soupernova
+tags: [visualization, images, interactive]
+image: thumbnail.jpeg
+gif: thumbnail.gif
+packageName: soupernova

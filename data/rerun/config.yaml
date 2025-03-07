@@ -1,0 +1,8 @@
+name: Rerun
+description: Visualize streams of multimodal data. Fast, easy to use, and simple to integrate. Built in Rust using egui.
+environments: [jupyter]
+githubRepo: rerun-io/rerun
+tags: [visualization, multimodal, data streams, interactive]
+image: thumbnail.png
+gif: thumbnail.gif
+packageName: rerun

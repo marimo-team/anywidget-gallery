@@ -1,0 +1,8 @@
+name: Lonboard
+description: Fast, interactive geospatial vector data visualization in Jupyter.
+environments: [jupyter]
+githubRepo: developmentseed/lonboard
+tags: [visualization, geospatial, interactive, maps]
+image: thumbnail.jpeg
+gif: thumbnail.gif
+packageName: lonboard

@@ -1,0 +1,6 @@
+name: D3vis IPyNB
+description: A Custom Jupyter Widget Library with visualizations created with D3.js
+environments: [jupyter]
+githubRepo: H-IAAC/d3vis_ipynb
+tags: [visualization, d3, interactive]
+packageName: d3vis_ipynb

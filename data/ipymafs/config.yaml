@@ -1,0 +1,8 @@
+name: IPyMafs
+description: Interactive math react components in jupyter
+environments: [jupyter]
+githubRepo: kolibril13/ipymafs
+tags: [math, visualization, interactive]
+image: thumbnail.jpeg
+gif: thumbnail.gif
+packageName: ipymafs

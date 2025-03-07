@@ -1,0 +1,6 @@
+name: TorchFlux
+description: An opinionated zero-config pytorch trainer
+environments: [jupyter]
+githubRepo: Cogniveon/torchflux
+tags: [machine learning, pytorch, training]
+packageName: torchflux

@@ -1,0 +1,7 @@
+name: Jupyter Anywidget PGLite
+description: Access sideloaded pglite WASM (PostgreSQL WASM) via Jupyter notebooks and anywidget.
+environments: [jupyter]
+githubRepo: innovationOUtside/jupyter_anywidget_pglite
+tags: [database, postgresql, wasm, interactive]
+image: thumbnail.png
+packageName: jupyter_anywidget_pglite

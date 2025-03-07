@@ -1,0 +1,10 @@
+name: Quak
+description: a scalable data profiler
+homePageUrl: https://manzt.github.io/quak/
+environments: [marimo, jupyter, colab]
+notebookUrl: https://raw.githubusercontent.com/marimo-team/marimo/refs/heads/main/examples/third_party/anywidget/reactive_quak.py
+githubRepo: manzt/quak
+tags: [visualization, charts, data science]
+image: thumbnail.jpg
+gif: thumbnail.gif
+packageName: quak

@@ -1,0 +1,7 @@
+name: IPyTweakpane
+description: IPython/Jupyter notebooks module for Tweakpane UI.
+environments: [jupyter]
+githubRepo: manzt/ipytweakpane
+tags: [ui, controls, interactive]
+image: thumbnail.png
+packageName: ipytweakpane

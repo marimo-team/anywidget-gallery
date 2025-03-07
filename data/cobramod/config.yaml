@@ -1,0 +1,6 @@
+name: CobraMod
+description: Modify and extend genome-scale metabolic models with metabolic pathway information from various metabolic pathways databases or user-curated data sets
+environments: [jupyter]
+githubRepo: Toepfer-Lab/cobramod
+tags: [biology, metabolism, interactive]
+packageName: cobramod

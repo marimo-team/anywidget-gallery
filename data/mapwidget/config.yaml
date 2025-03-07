@@ -1,0 +1,6 @@
+name: MapWidget
+description: Interactive 2D/3D maps using popular JavaScript libraries with bidirectional communication, such as Cesium, Mapbox, MapLibre, Leaflet, and OpenLayers
+environments: [jupyter]
+githubRepo: opengeos/mapwidget
+tags: [visualization, maps, geospatial, interactive]
+packageName: mapwidget

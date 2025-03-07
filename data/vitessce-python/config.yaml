@@ -1,0 +1,7 @@
+name: Vitessce Python
+description: Python API and Jupyter widget for Vitessce
+environments: [jupyter]
+githubRepo: vitessce/vitessce-python
+tags: [visualization, bioinformatics, interactive]
+image: thumbnail.png
+packageName: vitessce-python

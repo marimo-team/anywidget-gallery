@@ -1,0 +1,7 @@
+name: PyObsPlot
+description: Observable Plot in Jupyter notebooks and Quarto documents.
+environments: [jupyter]
+githubRepo: juba/pyobsplot
+tags: [visualization, charts, data science, interactive]
+image: thumbnail.png
+packageName: pyobsplot

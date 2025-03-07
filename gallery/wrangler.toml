@@ -1,0 +1,15 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "anywidget-gallery"
+node_compat = true
+
+main = "./server.ts"
+workers_dev = true
+# https://developers.cloudflare.com/workers/platform/compatibility-dates
+compatibility_date = "2025-03-07"
+
+[assets]
+# https://developers.cloudflare.com/workers/static-assets/binding/
+directory = "./build/client"
+
+[build]
+command = "npm run build"

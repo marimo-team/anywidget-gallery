@@ -1,0 +1,6 @@
+name: Py Cosmograph
+description: Binder to the cosmograph visual analytics for big graphs
+environments: [jupyter]
+githubRepo: cosmograph-org/py_cosmograph
+tags: [visualization, graph, network, interactive]
+packageName: py_cosmograph

@@ -1,0 +1,8 @@
+name: ChromoSpyce
+description: Visualize chromatin in space, as a widget!
+environments: [jupyter]
+githubRepo: dvdkouril/chromospyce
+tags: [visualization, biology, genomics, interactive]
+image: thumbnail.png
+gif: thumbnail.gif
+packageName: chromospyce

@@ -1,0 +1,6 @@
+name: JustPlotMe
+description: A library that uses LLMs to perform the AGI level task of creating plots.
+environments: [jupyter]
+githubRepo: nuwandavek/justplotme
+tags: [visualization, llm, ai, interactive]
+packageName: justplotme

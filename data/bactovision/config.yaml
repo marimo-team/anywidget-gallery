@@ -1,0 +1,6 @@
+name: BactoVision
+description: A jupyter widget for processing bacterial growth images
+environments: [jupyter]
+githubRepo: StarostinV/bactovision
+tags: [visualization, biology, image processing, interactive]
+packageName: bactovision
