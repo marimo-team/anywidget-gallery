@@ -1,0 +1,5 @@
+name: IPyReactPlayer
+description: An interactive videoplayer as Ipywidget.
+environments: [jupyter]
+githubRepo: seidlr/ipyreactplayer
+tags: [video, player, interactive]

@@ -1,0 +1,5 @@
+name: Py-MapLibreGL
+description: Python bindings for MapLibre GL JS
+environments: [jupyter]
+githubRepo: eoda-dev/py-maplibregl
+tags: [maps, geospatial, visualization, interactive]

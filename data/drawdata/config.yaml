@@ -1,0 +1,7 @@
+name: DrawData
+description: Draw datasets from within Jupyter.
+environments: [jupyter]
+githubRepo: koaning/drawdata
+tags: [visualization, data science, interactive]
+image: thumbnail.jpeg
+gif: thumbnail.gif

@@ -1,0 +1,6 @@
+name: IPySlides
+description: Create Interactive Slides in Jupyter Notebook with all kind of rich content.
+environments: [jupyter]
+githubRepo: asaboor-gh/ipyslides
+tags: [slides, presentation, interactive]
+image: thumbnail.png

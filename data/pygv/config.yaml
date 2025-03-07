@@ -1,0 +1,6 @@
+name: PyGV
+description: A minimal, scriptable genome browser for python
+environments: [jupyter]
+githubRepo: manzt/pygv
+tags: [visualization, genomics, bioinformatics, interactive]
+image: thumbnail.png

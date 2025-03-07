@@ -1,0 +1,5 @@
+name: IPyNiivue
+description: A Jupyter Widget for Niivue based on anywidget.
+environments: [jupyter]
+githubRepo: niivue/ipyniivue
+tags: [visualization, medical imaging, interactive]

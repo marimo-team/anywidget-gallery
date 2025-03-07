@@ -1,0 +1,5 @@
+name: Bavisitter
+description: Babysitting LLMs for Visualization
+environments: [jupyter]
+githubRepo: jiwnchoi/Bavisitter
+tags: [visualization, llm, ai, interactive]

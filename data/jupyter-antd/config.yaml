@@ -1,0 +1,5 @@
+name: Jupyter Ant Design
+description: The antd UI for jupyter notebook base on anywidgets
+environments: [jupyter]
+githubRepo: IKKEM-Lin/jupyter-antd
+tags: [ui, components, interactive]

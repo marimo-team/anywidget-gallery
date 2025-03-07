@@ -1,0 +1,5 @@
+name: IPyClipboard
+description: A simple Jupyter Widget to read and write text from the clipboard.
+environments: [jupyter]
+githubRepo: jtpio/ipyclipboard
+tags: [clipboard, utility, interactive]

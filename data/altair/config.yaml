@@ -1,0 +1,9 @@
+name: Altair
+description: Declarative statistical visualization library for Python, based on Vega and Vega-Lite
+environments: [marimo, jupyter, colab]
+notebookUrl: https://raw.githubusercontent.com/marimo-team/marimo/e6fd07ccecbff10cb68fe2f7a3c2233ea1436432/examples/misc/reactive_plots.py
+homePageUrl: https://altair-viz.github.io/
+githubRepo: altair-viz/altair
+tags: [visualization, charts, data science]
+image: thumbnail.jpeg
+gif: thumbnail.gif

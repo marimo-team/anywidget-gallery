@@ -1,0 +1,7 @@
+name: Carbonplan Maps
+description: A Jupyter Widget for carbonplan maps.
+environments: [jupyter]
+githubRepo: manzt/carbonplan-maps
+tags: [visualization, maps, climate, interactive]
+image: thumbnail.jpeg
+gif: thumbnail.gif

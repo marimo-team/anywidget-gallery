@@ -1,0 +1,5 @@
+name: AiiDA-Bader
+description: AiiDA plugin for Bader charge analysis
+environments: [jupyter]
+githubRepo: superstar54/aiida-bader
+tags: [chemistry, materials science, interactive]

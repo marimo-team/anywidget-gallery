@@ -1,0 +1,6 @@
+name: IPyMolStar
+description: PDBeMolstar as anywidget
+environments: [jupyter]
+githubRepo: Jhsmit/ipymolstar
+tags: [visualization, molecular, protein, interactive]
+image: thumbnail.png

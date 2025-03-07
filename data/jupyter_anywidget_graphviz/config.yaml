@@ -1,0 +1,6 @@
+name: Jupyter Anywidget Graphviz
+description: Sideloaded graphviz WASM support for rendering dot language diagram scripts in Jupyter notebooks
+environments: [jupyter]
+githubRepo: innovationOUtside/jupyter_anywidget_graphviz
+tags: [visualization, diagrams, graphviz, interactive]
+image: thumbnail.png

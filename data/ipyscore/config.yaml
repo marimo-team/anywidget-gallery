@@ -1,0 +1,5 @@
+name: IPyScore
+description: A Jupyter widget for music notation
+environments: [jupyter]
+githubRepo: davidbrochart/ipyscore
+tags: [music, notation, interactive]

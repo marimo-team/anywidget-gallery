@@ -1,0 +1,6 @@
+name: Jupyter TLDraw
+description: The very good free whiteboard tldraw in the jupyter output.
+environments: [jupyter]
+githubRepo: kolibril13/jupyter-tldraw
+tags: [visualization, whiteboard, drawing, interactive]
+image: thumbnail.png

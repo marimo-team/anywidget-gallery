@@ -1,0 +1,7 @@
+name: Jupyter Scatter
+description: Interactive 2D scatter plots. Scales to millions of points!
+environments: [jupyter]
+githubRepo: flekschas/jupyter-scatter
+tags: [visualization, scatter plot, data science, interactive]
+image: thumbnail.jpeg
+gif: thumbnail.gif

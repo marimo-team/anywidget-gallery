@@ -1,0 +1,5 @@
+name: IPyTextual
+description: Jupyter Textual-based Widget
+environments: [jupyter]
+githubRepo: davidbrochart/ipytextual
+tags: [terminal, tui, interactive]

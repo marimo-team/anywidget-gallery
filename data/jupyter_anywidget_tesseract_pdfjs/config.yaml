@@ -1,0 +1,6 @@
+name: Jupyter Anywidget Tesseract PDFJS
+description: Sideloaded tesseract.js and pdfjs support for browser powered image and PDF OCR in Jupyter notebooks
+environments: [jupyter]
+githubRepo: innovationOUtside/jupyter_anywidget_tesseract_pdfjs
+tags: [ocr, pdf, document processing, interactive]
+image: thumbnail.png

@@ -1,0 +1,5 @@
+name: Cosmograph Widget
+description: A python widget talking to cosmograph JS tool
+environments: [jupyter]
+githubRepo: cosmograph-org/cosmograph_widget
+tags: [visualization, graph, network, interactive]

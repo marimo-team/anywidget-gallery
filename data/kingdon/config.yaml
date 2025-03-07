@@ -1,0 +1,5 @@
+name: Kingdon
+description: A symbolically optimized and pythonic Clifford (geometric) algebra library named after none other than William Kingdon Clifford.
+environments: [jupyter]
+githubRepo: tBuLi/kingdon
+tags: [math, algebra, geometric algebra, interactive]

@@ -1,0 +1,7 @@
+name: IPyMario
+description: A simple anywidget, built from Mike Bostock's Mario chime snippet.
+environments: [jupyter]
+githubRepo: manzt/ipymario
+tags: [fun, interactive, audio]
+image: thumbnail.jpeg
+gif: thumbnail.gif

@@ -1,0 +1,5 @@
+name: WigglyStuff
+description: A collection of expressive Jupyter widgets.
+environments: [jupyter]
+githubRepo: koaning/wigglystuff
+tags: [visualization, widgets, interactive]

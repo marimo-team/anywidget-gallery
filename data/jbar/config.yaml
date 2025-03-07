@@ -1,0 +1,5 @@
+name: JBar
+description: Interactive barcharts for Jupyter
+environments: [jupyter]
+githubRepo: jakobtroidl/jbar
+tags: [visualization, charts, interactive]

@@ -1,0 +1,5 @@
+name: Periodic Table Widget
+description: A jupyter widget to select chemical elements from the periodic table.
+environments: [jupyter]
+githubRepo: osscar-org/widget-periodictable
+tags: [visualization, chemistry, interactive]

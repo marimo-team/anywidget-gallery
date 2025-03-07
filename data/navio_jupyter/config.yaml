@@ -1,0 +1,7 @@
+name: Navio Jupyter
+description: A Jupyter widget for navio
+environments: [jupyter]
+githubRepo: john-guerra/navio_jupyter
+tags: [visualization, data exploration, interactive]
+image: thumbnail.jpeg
+gif: thumbnail.gif

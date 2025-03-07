@@ -1,0 +1,5 @@
+name: Bandsplot Widget
+description: A Jupyter widget to plot bandstructure and density of states.
+environments: [jupyter]
+githubRepo: osscar-org/widget-bandsplot
+tags: [visualization, physics, materials science, interactive]

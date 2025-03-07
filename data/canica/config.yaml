@@ -1,0 +1,5 @@
+name: Canica
+description: A text embedding viewer for the Jupyter environment
+environments: [jupyter]
+githubRepo: lakeraai/canica
+tags: [visualization, embeddings, nlp, interactive]

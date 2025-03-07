@@ -1,0 +1,5 @@
+name: PyLifemap
+description: Python package for Lifemap visualizations
+environments: [jupyter]
+githubRepo: juba/pylifemap
+tags: [visualization, biology, taxonomy, interactive]

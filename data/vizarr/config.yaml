@@ -1,0 +1,7 @@
+name: Vizarr
+description: A minimal Zarr-based image viewer.
+environments: [jupyter]
+githubRepo: hms-dbmi/vizarr
+tags: [visualization, image viewer, zarr, interactive]
+image: thumbnail.jpeg
+gif: thumbnail.gif

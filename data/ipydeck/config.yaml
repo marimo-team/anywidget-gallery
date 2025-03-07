@@ -1,0 +1,6 @@
+name: IPyDeck
+description: Yet another Jupyter widget for deck.gl
+environments: [jupyter]
+githubRepo: ozekik/ipydeck
+tags: [visualization, maps, geospatial, interactive]
+image: thumbnail.png

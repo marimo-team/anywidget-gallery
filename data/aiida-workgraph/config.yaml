@@ -1,0 +1,5 @@
+name: AiiDA-WorkGraph
+description: Design flexible node-based workflows using AiiDA
+environments: [jupyter]
+githubRepo: superstar54/aiida-workgraph
+tags: [workflow, materials science, interactive]

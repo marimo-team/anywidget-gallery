@@ -1,0 +1,7 @@
+name: Persist
+description: A JupyterLab extension to enable persistent interactive visualizations in JupyterLab notebooks.
+environments: [jupyter]
+githubRepo: visdesignlab/persist
+tags: [visualization, interactive, jupyterlab]
+image: thumbnail.jpeg
+gif: thumbnail.gif

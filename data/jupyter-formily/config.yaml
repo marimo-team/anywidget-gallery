@@ -1,0 +1,5 @@
+name: Jupyter Formily
+description: Integrates fomily to jupyter notebook, which base on anywidget
+environments: [jupyter]
+githubRepo: IKKEM-Lin/jupyter-formily
+tags: [forms, ui, interactive]

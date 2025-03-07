@@ -1,0 +1,6 @@
+name: Comparative Embedding Visualization
+description: Compare embedding visualizations with shared labels by their confusion, neighborhoods, and size.
+environments: [jupyter]
+githubRepo: OzetteTech/comparative-embedding-visualization
+tags: [visualization, embeddings, machine learning, interactive]
+image: thumbnail.png

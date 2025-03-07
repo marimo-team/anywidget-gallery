@@ -1,0 +1,7 @@
+name: Mosaic
+description: An extensible framework for linking databases and interactive views.
+environments: [jupyter]
+githubRepo: uwdata/mosaic
+tags: [visualization, data science, interactive, database]
+image: thumbnail.jpeg
+gif: thumbnail.gif
