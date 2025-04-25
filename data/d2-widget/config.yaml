@@ -1,0 +1,10 @@
+name: D2 Widget
+description: Bring the power of D2 to Python notebooks.
+homePageUrl: https://d2-widget.peter.gy
+environments: [marimo, jupyter, colab]
+notebookUrl: https://raw.githubusercontent.com/peter-gy/d2-widget/refs/heads/main/playground/d2_playground.py
+githubRepo: peter-gy/d2-widget
+tags: [visualization, charts, diagramming, d2]
+image: thumbnail.jpg
+gif: thumbnail.gif
+packageName: d2-widget
