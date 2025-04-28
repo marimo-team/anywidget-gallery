@@ -3,7 +3,7 @@
 A showcase of widgets built with [anywidget](https://github.com/manzt/anywidget), a library that makes it easy to create reusable widgets across [marimo](https://github.com/marimo-team/marimo), Jupyter, and more.
 
 <p align="center">
-  <a href="https://anywidget.gallery" target="_blank"><strong>Gallery</strong></a> ·
+  <a href="https://try.anywidget.dev" target="_blank"><strong>Gallery</strong></a> ·
   <a href="https://anywidget.dev" target="_blank"><strong>anywidget</strong></a>
 </p>
 
