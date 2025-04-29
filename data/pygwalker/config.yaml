@@ -1,0 +1,12 @@
+name: PyGWalker
+description: Turn your pandas dataframe into an interactive UI for visual analysis
+homePageUrl: https://github.com/Kanaries/pygwalker
+environments: [marimo, jupyter]
+githubRepo: Kanaries/pygwalker
+tags: [visualization, data analysis, pandas, tableau]
+packageName: pygwalker
+notebookCode: |
+  import pygwalker as pyg
+  import pandas as pd
+  df = pd.read_csv("https://raw.githubusercontent.com/Kanaries/pygwalker/main/examples/data/data.csv")
+  pyg.walk(df)

@@ -1,0 +1,21 @@
+name: itables
+description: Interactive tables in Jupyter and marimo notebooks
+repository: https://github.com/mwouts/itables
+pypi: itables
+environments: [marimo, jupyter]
+tags:
+  - table
+  - pandas
+  - interactive
+  - jupyter
+notebookCode: |
+  import pandas as pd
+  import anywidget
+
+  from itables.widget import ITable
+
+  df = pd.read_json(
+      "https://raw.githubusercontent.com/vega/vega-datasets/master/data/cars.json"
+  )
+
+  ITable(df)
