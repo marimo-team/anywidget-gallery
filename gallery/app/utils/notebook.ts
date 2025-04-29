@@ -17,7 +17,7 @@ export function resolveNotebookURL(widget: BuiltWithAnyWidget) {
 			};
 		}
 
-		guessPackageName = guessPackageName.replace("-", "_");
+		guessPackageName = guessPackageName.replaceAll("-", "_");
 
 		const code = `
 import marimo
@@ -29,7 +29,7 @@ async def _():
     import micropip
     await micropip.install('${guessPackageName}')
     import ${guessPackageName}
-    ${guessPackageName}
+    help(${guessPackageName})
     return
 `;
 		queryParams.set("code", encodeURIComponent(code));
