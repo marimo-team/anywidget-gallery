@@ -1,0 +1,8 @@
+name: moutils
+description: Utilities for marimo notebooks
+homePageUrl: https://github.com/marimo-team/moutils
+notebookUrl: https://raw.githubusercontent.com/marimo-team/moutils/refs/heads/main/notebooks/example.py
+environments: [marimo]
+githubRepo: marimo-team/moutils
+tags: [utilities, data science, marimo]
+packageName: moutils
