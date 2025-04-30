@@ -1,0 +1,9 @@
+name: modraw
+description: Draw images with tldraw widget
+environments: [marimo, jupyter, colab]
+githubRepo: koaning/modraw
+notebookUrl: https://github.com/koaning/modraw/blob/main/demo.py
+tags: [interactive]
+image: thumbnail.jpeg
+gif: thumbnail.gif
+packageName: drawdata
