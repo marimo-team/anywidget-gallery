@@ -1,5 +1,5 @@
-import type { BuiltWithAnyWidget } from "~/model/types";
 import { dedent } from "ts-dedent";
+import type { BuiltWithAnyWidget } from "~/model/types";
 
 export function resolveNotebookURL(widget: BuiltWithAnyWidget) {
 	const queryParams = new URLSearchParams();
