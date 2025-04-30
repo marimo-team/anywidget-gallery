@@ -9,6 +9,9 @@ on:
 jobs:
   test_and_build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./gallery
 
     steps:
       - uses: actions/checkout@v4
@@ -30,21 +33,16 @@ jobs:
           run_install: false
 
       - name: 📥 Install dependencies
-        working-directory: ./gallery
         run: pnpm install
 
       - name: 🔍 Run linter
-        working-directory: ./gallery
         run: pnpm lint
 
       - name: 🧪 Run type check
-        working-directory: ./gallery
         run: pnpm typecheck
 
       - name: 🧪 Run tests
-        working-directory: ./gallery
         run: pnpm test
 
       - name: 🏗️ Build
-        working-directory: ./gallery
         run: pnpm build
