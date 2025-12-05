@@ -1,0 +1,10 @@
+name: pynodewidget
+description: Node editor widget based on react flow
+environments: [jupyter, marimo]
+homePageUrl: https://henningscheufler.github.io/pynodewidget/
+notebookUrl: https://github.com/HenningScheufler/pynodewidget/blob/256c3e9447da1f1eb7fbf85ce45dcebc953185ad/examples/marimo_demo.py
+githubRepo: HenningScheufler/pynodewidget
+tags: [visualization, node editor, interactive]
+image: vscode_example.jpeg
+gif: vscode_example.gif
+packageName: pynodewidget
