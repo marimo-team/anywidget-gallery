@@ -4,6 +4,8 @@ homePageUrl: https://github.com/Kanaries/pygwalker
 environments: [marimo, jupyter]
 githubRepo: Kanaries/pygwalker
 tags: [visualization, data analysis, pandas, tableau]
+image: thumbnail.gif
+gif: thumbnail.gif
 packageName: pygwalker
 notebookCode: |
   import pygwalker as pyg

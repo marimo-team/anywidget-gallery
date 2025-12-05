@@ -47,5 +47,8 @@ export default defineConfig({
 	define: {
 		FinalizationRegistry: "Object",
 	},
+	test: {
+		watch: false,
+	},
 	// publicDir: '../',
 });

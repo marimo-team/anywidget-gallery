@@ -4,3 +4,5 @@ environments: [jupyter]
 githubRepo: nuwandavek/justplotme
 tags: [visualization, llm, ai, interactive]
 packageName: justplotme
+image: thumbnail.gif
+gif: thumbnail.gif

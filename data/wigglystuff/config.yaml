@@ -5,3 +5,5 @@ githubRepo: koaning/wigglystuff
 notebookUrl: https://github.com/koaning/wigglystuff/blob/main/notebook.py
 tags: [visualization, widgets, interactive]
 packageName: wigglystuff
+image: thumbnail.gif
+gif: thumbnail.gif

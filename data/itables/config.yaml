@@ -1,8 +1,9 @@
 name: itables
 description: Interactive tables in Jupyter and marimo notebooks
-repository: https://github.com/mwouts/itables
+githubRepo: mwouts/itables
 pypi: itables
 environments: [marimo, jupyter]
+image: thumbnail.png
 tags:
   - table
   - pandas

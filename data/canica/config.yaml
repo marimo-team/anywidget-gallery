@@ -4,3 +4,5 @@ environments: [jupyter]
 githubRepo: lakeraai/canica
 tags: [visualization, embeddings, nlp, interactive]
 packageName: canica
+image: thumbnail.gif
+gif: thumbnail.gif

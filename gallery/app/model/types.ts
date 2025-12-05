@@ -1,4 +1,4 @@
-import { type ZodTypeDef, z } from "zod";
+import { z } from "zod";
 
 /**
  * Represents the environment in which a widget can be used.
@@ -74,6 +74,21 @@ export interface BuiltWithAnyWidget {
 	image?: string;
 
 	/**
+	 * URL to a GIF representing the widget, if available.
+	 */
+	gif?: string;
+
+	/**
+	 * PyPI package name, if available.
+	 */
+	pypi?: string;
+
+	/**
+	 * Full repository URL, if available.
+	 */
+	repository?: string;
+
+	/**
 	 * Is WASM compatible
 	 */
 	wasmCompatible?: boolean;
@@ -93,11 +108,7 @@ export const EnvironmentSchema = z.enum([
 /**
  * Zod schema for validating BuiltWithAnyWidget objects.
  */
-export const BuiltWithAnyWidgetSchema: z.ZodType<
-	BuiltWithAnyWidget,
-	ZodTypeDef,
-	unknown
-> = z.object({
+export const BuiltWithAnyWidgetSchema = z.object({
 	// Required properties
 	name: z.string(),
 	description: z.string(),
@@ -112,6 +123,7 @@ export const BuiltWithAnyWidgetSchema: z.ZodType<
 	notebookUrl: z.string().url().optional(),
 	notebookCode: z.string().optional(),
 	githubRepo: z.string().optional(),
+	packageName: z.string().optional(),
 	additionalLinks: z
 		.array(
 			z.object({
@@ -121,4 +133,40 @@ export const BuiltWithAnyWidgetSchema: z.ZodType<
 		)
 		.default([]),
 	image: z.string().optional(),
+	gif: z.string().optional(),
+	pypi: z.string().optional(),
+	repository: z.string().url().optional(),
+	wasmCompatible: z.boolean().optional(),
 });
+
+/**
+ * All known fields in the config schema.
+ */
+const KNOWN_CONFIG_KEYS = new Set(Object.keys(BuiltWithAnyWidgetSchema.shape));
+
+/**
+ * Validates a widget config and logs warnings for unknown keys.
+ * @param rawConfig - The raw parsed YAML config
+ * @param configPath - The path to the config file (for logging)
+ * @returns The validated config
+ */
+export function validateWidgetConfig(
+	rawConfig: unknown,
+	configPath: string,
+): BuiltWithAnyWidget {
+	const parsed = BuiltWithAnyWidgetSchema.parse(rawConfig);
+
+	// Check for unknown keys
+	if (typeof rawConfig === "object" && rawConfig !== null) {
+		const rawKeys = Object.keys(rawConfig);
+		const unknownKeys = rawKeys.filter((key) => !KNOWN_CONFIG_KEYS.has(key));
+
+		if (unknownKeys.length > 0) {
+			console.warn(
+				`[${configPath}] Unknown keys in config: ${unknownKeys.join(", ")}`,
+			);
+		}
+	}
+
+	return parsed;
+}

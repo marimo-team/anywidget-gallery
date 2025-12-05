@@ -4,3 +4,4 @@ environments: [jupyter]
 githubRepo: Toepfer-Lab/cobramod
 tags: [biology, metabolism, interactive]
 packageName: cobramod
+image: thumbnail.png

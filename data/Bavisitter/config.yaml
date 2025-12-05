@@ -4,3 +4,4 @@ environments: [jupyter]
 githubRepo: jiwnchoi/Bavisitter
 tags: [visualization, llm, ai, interactive]
 packageName: Bavisitter
+image: thumbnail.png

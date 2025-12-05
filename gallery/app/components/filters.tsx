@@ -85,7 +85,9 @@ export function FilterSidebar({
 					<FilterSection
 						className="flex-shrink-0"
 						title="Environment"
-						items={Object.keys(environmentCounts) as Environment[]}
+						items={(Object.keys(environmentCounts) as Environment[]).filter(
+							(env) => environmentCounts[env] > 0,
+						)}
 						selectedItems={selectedEnvironments}
 						toggleItem={toggleEnvironment}
 						getCount={(env) => environmentCounts[env]}

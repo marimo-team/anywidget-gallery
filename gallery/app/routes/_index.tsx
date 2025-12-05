@@ -16,8 +16,8 @@ import { Header } from "~/components/header";
 import { WidgetCard } from "~/components/widget-card";
 import {
 	type BuiltWithAnyWidget,
-	BuiltWithAnyWidgetSchema,
 	type Environment,
+	validateWidgetConfig,
 } from "~/model/types";
 import { cn } from "~/utils/cn";
 import { resolveNotebookURL } from "~/utils/notebook";
@@ -49,7 +49,7 @@ export async function loader() {
 		try {
 			// Parse YAML content
 			const rawConfig = YAML.parse(content as string);
-			const config = BuiltWithAnyWidgetSchema.parse(rawConfig);
+			const config = validateWidgetConfig(rawConfig, path);
 
 			// Extract directory name from path pattern /data/{name}/config.yaml
 			const dirName = path.split("/").slice(-2)[0];
@@ -57,17 +57,19 @@ export async function loader() {
 			const cdn =
 				"https://raw.githubusercontent.com/marimo-team/anywidget-gallery/refs/heads/main";
 
-			// Create widget object with required fields
-			const widget: BuiltWithAnyWidget = {
-				...config,
-				// Fix image path to access files from the root directory
-				image: config.image
-					? `${cdn}/data/${dirName}/${config.image}`
-					: undefined,
-				githubRepo: config.githubRepo
-					? `https://github.com/${config.githubRepo}`
-					: undefined,
-			};
+		// Create widget object with required fields
+		// Prefer GIF if available, fallback to image
+		const thumbnailPath = config.gif || config.image;
+		const widget: BuiltWithAnyWidget = {
+			...config,
+			// Fix image path to access files from the root directory
+			image: thumbnailPath
+				? `${cdn}/data/${dirName}/${thumbnailPath}`
+				: undefined,
+			githubRepo: config.githubRepo
+				? `https://github.com/${config.githubRepo}`
+				: undefined,
+		};
 
 			widgets.push(widget);
 		} catch (error) {

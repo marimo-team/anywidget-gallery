@@ -4,3 +4,4 @@ environments: [jupyter]
 githubRepo: IKKEM-Lin/jupyter-formily
 tags: [forms, ui, interactive]
 packageName: jupyter-formily
+image: thumbnail.png

@@ -4,3 +4,4 @@ environments: [jupyter]
 githubRepo: michelle123lam/lloom
 tags: [nlp, text analysis, ai, interactive]
 packageName: lloom
+image: thumbnail.png

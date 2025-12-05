@@ -4,3 +4,4 @@ environments: [jupyter]
 githubRepo: StarostinV/bactovision
 tags: [visualization, biology, image processing, interactive]
 packageName: bactovision
+image: thumbnail.png
