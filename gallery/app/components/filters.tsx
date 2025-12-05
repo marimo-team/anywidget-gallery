@@ -2,6 +2,7 @@ import { ChevronDownIcon, XIcon } from "lucide-react";
 import { useState } from "react";
 import { Button } from "react-aria-components";
 import type { Environment } from "~/model/types";
+import { cn } from "~/utils/cn";
 
 export function FilterSidebar({
 	isFilterMenuOpen,
@@ -40,7 +41,7 @@ export function FilterSidebar({
 				</Button>
 			</div>
 
-			<div className="md:w-64 flex-shrink-0 sticky top-0">
+			<div className="md:w-64 flex-shrink-0 sticky top-0 max-h-full min-h-64 flex flex-col overflow-hidden">
 				<div className="md:hidden mb-4">
 					<Button
 						onPress={() => setIsFilterMenuOpen(!isFilterMenuOpen)}
@@ -63,7 +64,7 @@ export function FilterSidebar({
 					className={`bg-white dark:bg-gray-900 p-4 rounded-lg shadow border border-gray-200 dark:border-gray-700 transition-all duration-300 ease-in-out ${
 						isFilterMenuOpen
 							? "opacity-100 translate-y-0"
-							: "hidden md:block md:opacity-100 md:translate-y-0"
+							: "hidden md:flex md:overflow-hidden md:flex-col md:opacity-100 md:translate-y-0"
 					}`}
 				>
 					<div className="flex items-center justify-between mb-4">
@@ -82,6 +83,7 @@ export function FilterSidebar({
 
 					{/* Environment filters */}
 					<FilterSection
+						className="flex-shrink-0"
 						title="Environment"
 						items={Object.keys(environmentCounts) as Environment[]}
 						selectedItems={selectedEnvironments}
@@ -105,12 +107,14 @@ export function FilterSidebar({
 }
 
 function FilterSection<T extends string>({
+	className,
 	title,
 	items,
 	selectedItems,
 	toggleItem,
 	getCount,
 }: {
+	className?: string;
 	title: string;
 	items: T[];
 	selectedItems: T[];
@@ -120,7 +124,7 @@ function FilterSection<T extends string>({
 	const [isExpanded, setIsExpanded] = useState(true);
 
 	return (
-		<div className="mb-4">
+		<div className={cn("mb-4 flex flex-col overflow-hidden", className)}>
 			<div className="flex justify-between items-center">
 				<h3 className="text-base font-medium text-gray-900 dark:text-gray-100">
 					{title}
@@ -139,7 +143,7 @@ function FilterSection<T extends string>({
 				</Button>
 			</div>
 			{isExpanded && (
-				<div className="space-y-2 max-h-60 overflow-y-auto mt-2 px-4 bg-gray-50 dark:bg-gray-800 py-3 rounded scrollbar-thin dark:scrollbar-thumb-gray-600">
+				<div className="space-y-2 overflow-y-auto flex-1 mt-2 px-4 bg-gray-50 dark:bg-gray-800 py-3 rounded scrollbar-thin dark:scrollbar-thumb-gray-600">
 					{items.map((item) => (
 						<div key={item} className="flex items-center">
 							<input
@@ -153,7 +157,7 @@ function FilterSection<T extends string>({
 							/>
 							<label
 								htmlFor={`filter-${title.toLowerCase()}-${item}`}
-								className="ml-3 text-sm text-gray-600 dark:text-gray-300 cursor-pointer flex items-center justify-between w-full"
+								className="ml-3 text-sm text-gray-600 dark:text-gray-300 cursor-pointer flex items-center justify-between w-full select-none"
 							>
 								<span>{item}</span>
 								{getCount && (

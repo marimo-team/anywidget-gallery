@@ -44,16 +44,22 @@ export default function Image({
 	const imgRef = useRef<HTMLImageElement>(null);
 	const retryTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
+	// Reset loading/error state when src changes and check if image is already loaded (cached)
 	useEffect(() => {
 		setIsLoading(true);
 		setHasError(false);
+
+		// Check if image is already loaded from cache (SSR/hydration fix)
+		if (imgRef.current?.complete && imgRef.current?.naturalHeight !== 0) {
+			setIsLoading(false);
+		}
 
 		return () => {
 			if (retryTimeoutRef.current) {
 				clearTimeout(retryTimeoutRef.current);
 			}
 		};
-	}, []);
+	}, [src]);
 
 	const handleRetry = () => {
 		setIsLoading(true);
