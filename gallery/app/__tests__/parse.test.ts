@@ -20,7 +20,7 @@ describe("YAML Validation", () => {
 	it.each(entries)(
 		"should validate %s and warn about unknown keys",
 		async (path, content) => {
-			const consoleSpy = vi.spyOn(console, "warn").mockImplementation(() => {});
+			const consoleSpy = vi.spyOn(console, "warn").mockImplementation(() => undefined);
 
 			const config = YAML.parse(content as string);
 			expect(() => validateWidgetConfig(config, path)).not.toThrow();
