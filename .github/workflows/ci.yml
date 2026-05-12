@@ -34,7 +34,7 @@ jobs:
           run_install: false
 
       - name: 📥 Install dependencies
-        run: pnpm install
+        run: pnpm install --ignore-scripts
 
       - name: 🔍 Run linter
         run: pnpm lint
