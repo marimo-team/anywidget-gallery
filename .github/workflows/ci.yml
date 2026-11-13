@@ -8,7 +8,7 @@ on:
 
 jobs:
   test_and_build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-p-small
     defaults:
       run:
         working-directory: ./gallery
