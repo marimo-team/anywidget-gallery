@@ -16,4 +16,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://mylessss:$HF_TOKEN@huggingface.co/spaces/marimo-team/anywidget-gallery main
+        run: git push "https://mylessss:$HF_TOKEN@huggingface.co/spaces/marimo-team/anywidget-gallery" main
